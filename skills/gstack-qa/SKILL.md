@@ -3,11 +3,11 @@ name: gstack-qa
 description: Live runtime visual QA and physical ergonomics auditor. Drives real browser (Playwright) or mobile ADB hardware screen inspection to verify zero RenderFlex stripes, zero clipped text, and >=48x48dp touch targets.
 ---
 
-# gstack-QA — Live Runtime Visual & Ergonomics Auditor
+# Runtime Visual QA — Live Ergonomics & Screen Auditor
 
 The **gstack-qa** skill performs black-box and visual verification on real executing runtimes (web browsers, mobile hardware, desktop instances).
 
-Passing unit tests only prove that code runs; **gstack-qa proves that the software looks right, feels right, and functions reliably for real users.**
+Passing unit tests only prove that code runs; **this skill proves that the software looks right, feels right, and functions reliably for real users.**
 
 ---
 

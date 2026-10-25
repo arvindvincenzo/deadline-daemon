@@ -6,9 +6,9 @@
 [![Safety](https://img.shields.io/badge/Scanner_Safety-Strict_Read--Only-blueviolet.svg)](#strict-safety-invariants)
 [![Skills](https://img.shields.io/badge/Skills-12_Specialized_Agents-orange.svg)](#the-12-specialized-agent-skills)
 
-**Deadline Daemon** is an autonomous engineering architecture combining rigorous, deadline-driven execution with forensic-grade, multi-target codebase scanning.
+**Deadline Daemon** is an autonomous software engineering architecture that fuses deadline-driven execution with high-throughput codebase scanning.
 
-It fuses the **Deadline Method** (powered by GSD anti-context-rot, the gstack review triad, and ECC reactive instincts) with the **Upgraded REA Codebase Omni-Scanner** (zero-dependency AST parsing, Personalized PageRank repomaps, and 130+ forensic reverse engineering tools).
+It combines the **Deadline Method** (context-resilient execution, the executive review triad, and reactive guardrails) with the **Codebase Omni-Scanner** (zero-dependency streaming AST parsing, Personalized PageRank repomaps, and token-budgeted code folding).
 
 ```
                                 ┌──────────────────────────────────────────────┐
@@ -20,14 +20,14 @@ It fuses the **Deadline Method** (powered by GSD anti-context-rot, the gstack re
                         │                                                             │
                         ▼                                                             ▼
         ┌───────────────────────────────┐                             ┌───────────────────────────────┐
-        │        DEADLINE METHOD        │                             │        REA OMNI-SCANNER       │
+        │        DEADLINE METHOD        │                             │     CODEBASE OMNI-SCANNER     │
         │    (Workflow & Governance)    │                             │    (Discovery & Inspection)   │
         ├───────────────────────────────┤                             ├───────────────────────────────┤
         │ • 4-Round Grill ➔ Plan Loop   │                             │ • Multi-Language AST Lexer    │
         │ • 3-Role Review Triad         │                             │ • Personalized PageRank (PPR) │
         │ • 7-Dimension Closure Matrix  │                             │ • Skeleton & Focus Code Folder│
         │ • Goldratt CCPM Buffer Engine │                             │ • FastContext BM25 Localizer  │
-        │ • Anti-Context-Rot Memory     │                             │ • 130+ Binary & Dynamic Tools │
+        │ • Context-Resilient Memory    │                             │ • Full Typed AST Signatures   │
         │ • Turnkey Verification Seal   │                             │ • STRICT ZERO-WRITE POLICY    │
         └───────────────┬───────────────┘                             └───────────────┬───────────────┘
                         │                                                             │
@@ -35,7 +35,7 @@ It fuses the **Deadline Method** (powered by GSD anti-context-rot, the gstack re
                                                        │
                                                        ▼
                                       ┌─────────────────────────────────┐
-                                      │    ANTIGRAVITY NATIVE TOOLS     │
+                                      │          NATIVE TOOLS           │
                                       │    (Atomic Authoring & Run)     │
                                       ├─────────────────────────────────┤
                                       │ • read_file / write_file        │
@@ -56,16 +56,16 @@ deadline-daemon/
 ├── docs/
 │   ├── ARCHITECTURE.md            # Deep system architecture & invariants
 │   ├── GRILL_AND_THRILL.md        # The 4-Round Critical Grill-Me Protocol
-│   └── REA_SCANNER.md             # Omni-Scanner algorithm & API reference
+│   └── SCANNER.md                 # Omni-Scanner algorithm & API reference
 ├── packages/
-│   └── rea/                       # Upgraded REA Omni-Scanner MCP Server & Reversing Engine
+│   └── scanner/                   # Codebase Omni-Scanner Engine
 │       ├── src/
 │       │   ├── domain/codebase/   # AST Lexer, RepoMap PageRank, Skeletonizer, FastContext
 │       │   ├── application/       # SQLite incremental cache, Scanner Service
 │       │   ├── contracts/         # Zod schemas, Tool contracts, strict read-only effects
 │       │   └── server/            # MCP server dispatcher & tool registration
 │       ├── scripts/               # Test runners & ts-loader
-│       └── package.json           # REA package manifest
+│       └── package.json           # Scanner package manifest
 ├── skills/                        # 12 Specialized Agent Skills
 │   ├── deadline/                  # Master Deadline Orchestrator & Critical Thinker
 │   ├── gsd-planner/               # Context-efficient wave-based task decomposition
@@ -115,7 +115,7 @@ chmod +x ./scripts/install.sh
 ```
 
 ### 2. Run Quality Gate & Tests
-Validate all 12 skills, templates, and the REA Codebase Omni-Scanner:
+Validate all 12 skills, templates, and the Codebase Omni-Scanner:
 
 **On Windows:**
 ```powershell
@@ -150,26 +150,26 @@ npm test
 
 ---
 
-## Upgraded REA Omni-Scanner vs. Daemons Gate
+## Codebase Omni-Scanner Highlights
 
-REA's integrated codebase scanner significantly outclasses traditional pure-Go scanners while maintaining zero external runtime dependencies:
+The integrated codebase scanner delivers high-throughput semantic analysis with zero external runtime dependencies:
 
-| Feature | Legacy Scanners (Daemons Gate) | **Upgraded REA Omni-Scanner** |
+| Capability | Traditional Scanners | **Codebase Omni-Scanner** |
 | :--- | :--- | :--- |
 | **AST Signatures** | Symbol name only (`│func:Run`) | **Full Typed Signatures** (`│func:Run(ctx: Ctx): Promise<Res>`) |
 | **Graph Algorithm** | Uniform PageRank | **Personalized PageRank (PPR)** biased by query |
 | **Code Folding** | Indiscriminately strips comments | **Preserves JSDoc/rustdoc** + dual `skeleton`/`focus` modes |
 | **Lexical Search** | Substring / line frequency | **BM25 FastContext** with `camelCase`/`snake_case` sub-tokens |
 | **Fuzzy Discovery** | Exact match only | **Levenshtein Typo Distance** suggestions |
-| **Caching Engine** | CGO SQLite dependency | **Zero-Dependency Native Node.js** (`node:sqlite`) |
+| **Caching Engine** | External CGO bindings | **Zero-Dependency Native Node.js** (`node:sqlite`) |
 | **Write Surface** | Includes file-modifying tools | **Strictly Read-Only Guarantee** (`writesFilesystem: false`) |
 
 ---
 
 ## Strict Safety Invariants
 
-REA operates under a mathematically verified **Read-Only Invariant**:
-- **Zero Disk Modification Tools**: REA contains no file editing, creating, patching, or deleting capabilities.
+The scanner operates under a mathematically verified **Read-Only Invariant**:
+- **Zero Disk Modification Tools**: The scanner contains no file editing, creating, patching, or deleting capabilities.
 - All 4 scanner tools (`scan_codebase`, `search_codebase`, `inspect_codebase`, `trace_codebase`) enforce:
   ```typescript
   writesFilesystem: false,
@@ -177,7 +177,7 @@ REA operates under a mathematically verified **Read-Only Invariant**:
   mayDiscardData: false,
   idempotent: true
   ```
-- File authoring and modifications remain exclusively governed by native agent tools (`write_file`, `edit_file`) under the Deadline Method.
+- File authoring and modifications remain exclusively governed by native tools (`write_file`, `edit_file`) under the Deadline Method.
 
 ---
 

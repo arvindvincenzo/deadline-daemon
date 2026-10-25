@@ -36,8 +36,8 @@ for tmpl in "project.md.tmpl" "projectdeadline.md.tmpl" "walkthrough.md.tmpl"; d
     echo "  ✔ Template verified: $tmpl"
 done
 
-echo -e "\n[3/3] Running Upgraded REA Codebase Omni-Scanner Tests..."
-cd "$PROJECT_ROOT/packages/rea"
+echo -e "\n[3/3] Running Codebase Omni-Scanner Tests..."
+cd "$PROJECT_ROOT/packages/scanner"
 node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/verify_codebase_scanner.ts
 
 echo -e "\n================================================="

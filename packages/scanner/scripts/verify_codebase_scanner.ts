@@ -13,7 +13,7 @@ import { CodebaseScannerService } from "../src/application/codebase/CodebaseScan
 import { TOOL_EFFECTS } from "../src/contracts/toolEffects.ts";
 import { CODEBASE_TOOL_CONTRACTS } from "../src/contracts/codebase/codebaseToolContracts.ts";
 
-console.log("=== Testing Codebase Scanner for REA ===");
+console.log("=== Testing Codebase Omni-Scanner for Deadline Daemon ===");
 
 // 1. Lexer AST extraction
 const tsCode = `

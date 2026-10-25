@@ -15,7 +15,7 @@ When AI models process conversations exceeding 50% context window utilization, t
 Deadline decouples the orchestrator from volatile conversation memory:
 - **`project.md`**: Master blueprint of requirements and domain invariants.
 - **`projectdeadline.md`**: Physical on-disk milestone ledger updated after each automated check.
-- **Subagent Context Isolation**: Heavy codebase mapping (`daemons-gate`), extensive test runs, or deep refactors are delegated to fresh subagent instances, keeping the main loop pristine.
+- **Subagent Context Isolation**: Heavy codebase mapping (Codebase Omni-Scanner), extensive test runs, or deep refactors are delegated to fresh subagent instances, keeping the main loop pristine.
 
 ---
 

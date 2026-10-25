@@ -1,8 +1,8 @@
-# REA Codebase Omni-Scanner — Architecture & API Reference
+# Codebase Omni-Scanner — Architecture & API Reference
 
-The **REA Codebase Omni-Scanner** is a forensic-grade, token-optimized repository comprehension engine embedded directly inside REA (`packages/rea`).
+The **Codebase Omni-Scanner** is a token-optimized repository comprehension engine embedded directly inside Deadline Daemon (`packages/scanner`).
 
-It synthesizes the high-throughput AST scanning of pure-Go daemons with the rich semantic analysis of modern TypeScript, running entirely on Node.js standard libraries (`node:sqlite`, `node:crypto`, `node:fs`) with **zero external dependencies**.
+It provides high-throughput AST scanning with rich semantic analysis, running entirely on Node.js standard libraries (`node:sqlite`, `node:crypto`, `node:fs`) with **zero external dependencies**.
 
 ---
 
@@ -10,12 +10,12 @@ It synthesizes the high-throughput AST scanning of pure-Go daemons with the rich
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       REA CODEBASE OMNI-SCANNER                             │
+│                          CODEBASE OMNI-SCANNER                              │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │  [Codebase Files] ──► [Multi-Language AST Lexer]                            │
 │                              │                                              │
-│                              ▼ (Dense Signatures + Qualified SCIP IDs)      │
+│                              ▼ (Dense Signatures + Qualified Symbols)       │
 │                     [Def-Use Multigraph]                                    │
 │                              │                                              │
 │                              ├───────────────┬────────────────┐             │
@@ -35,12 +35,12 @@ It synthesizes the high-throughput AST scanning of pure-Go daemons with the rich
 
 ### 1.1 Multi-Language AST Lexer (`src/domain/codebase/codebaseLexer.ts`)
 - **Streaming Symbol Extraction**: Parses TypeScript, JavaScript, Python, Go, Rust, Dart, C/C++, Java, and Swift.
-- **Typed Signatures**: Emits `func:name(args): ret` rather than bare names, giving LLMs complete interface context in a single scan.
+- **Typed Signatures**: Emits `func:name(args): ret` rather than bare names, giving models complete interface context in a single scan.
 - **Docstring Preservation**: Captures preceding JSDoc, rustdoc, and docstring headers.
 
 ### 1.2 Personalized PageRank RepoMap (`src/domain/codebase/repoMapBuilder.ts`)
 - **Weighted Def-Use Multigraph**: Nodes are symbols/files; edges represent calls and references.
-- **Personalized Teleportation (PPR)**: Unlike uniform PageRank, the random-walk teleportation vector is biased towards files and symbols matching the user's active query or focus files.
+- **Personalized Teleportation (PPR)**: Unlike uniform PageRank, the random-walk teleportation vector is biased towards files and symbols matching the active query or focus files.
 - **Greedy Token Packing**: Selects highest-scoring symbols until reaching the exact `budget_tokens` ceiling.
 
 ### 1.3 Source Code Skeletonizer (`src/domain/codebase/sourceSkeletonizer.ts`)
@@ -54,16 +54,16 @@ It synthesizes the high-throughput AST scanning of pure-Go daemons with the rich
 ### 1.5 Persistent Incremental SQLite Cache (`src/application/codebase/CodebaseIndexStore.ts`)
 - Uses Node.js native `node:sqlite` (`DatabaseSync`).
 - SHA-256 + mtime invalidation ensures sub-2ms cached retrieval.
-- **Levenshtein Typo Distance**: Offers `suggestSimilarSymbols` when an agent requests a misnamed function.
+- **Levenshtein Typo Distance**: Offers `suggestSimilarSymbols` when a symbol name is slightly misspelled.
 
 ---
 
 ## 2. Tool Reference & Signatures
 
-All 4 tools are registered with MCP contracts ensuring `writesFilesystem: false, mutatesTarget: false`:
+All 4 tools enforce a strict read-only guarantee (`writesFilesystem: false, mutatesTarget: false`):
 
 ### `scan_codebase`
-Scans a repository and outputs a structured structural summary.
+Scans a repository and outputs a structured summary.
 ```typescript
 interface ScanCodebaseInput {
   repo_path?: string;               // Target directory (default: workspace root)
@@ -110,5 +110,5 @@ interface TraceCodebaseInput {
 ---
 
 ## 3. Strict Safety Invariants
-- **ZERO Disk Writes**: Neither REA nor its codebase scanner ever create, delete, or modify workspace files.
-- **Deterministic Token Bounds**: All output strings strictly conform to `budget_tokens` and `budget_lines` to prevent LLM context exhaustion.
+- **ZERO Disk Writes**: The codebase scanner never creates, deletes, or modifies workspace files.
+- **Deterministic Token Bounds**: All output strings strictly conform to `budget_tokens` and `budget_lines` to prevent context exhaustion.

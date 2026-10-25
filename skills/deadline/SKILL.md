@@ -1,18 +1,18 @@
 ---
 name: deadline
-description: Universal workflow-based deadline planning and execution skill powered by the Critical Thinker Engine. Synthesizes principles from GSD (Anti-Context-Rot, file-based memory), gstack (CEO/Eng/Design review triad, real runtime QA), and ECC (agent instincts, harness pre-flight), along with the Upgraded REA Codebase Omni-Scanner, ACH hypothesis falsification, Goldratt CCPM buffer management, the 7-Dimension "Nothing-Missed" matrix, and zero-nudge autonomous execution.
+description: Universal workflow-based deadline planning and execution skill powered by the Critical Thinker Engine. Synthesizes context-resilient file-based memory, the executive review triad (CEO/Eng/Design), real runtime visual QA, reactive guardrails, the Codebase Omni-Scanner, ACH hypothesis falsification, Goldratt CCPM buffer management, the 7-Dimension "Nothing-Missed" matrix, and zero-nudge autonomous execution.
 ---
 
 # Deadline — Universal Milestone-Driven Planning & Execution Engine
 
 The **Deadline** skill is an industrial-strength, universal execution engine designed to build, refactor, or audit **any software system** (mobile, web, backend, CLI, embedded, full-stack) under fixed deadlines.
 
-It synthesizes the architectural breakthroughs of top agentic frameworks:
-- **GSD (`gsd-build` / `open-gsd`)**: Anti-Context-Rot architecture and external file-based memory.
-- **`garrytan/gstack`**: The 3-Role Review Triad (CEO, Eng, Design "Anti-Slop") and real runtime visual QA.
-- **`affaan-m/ecc`**: Reactive Agent Instincts, harness pre-flight audits, and strict guardrails.
-- **Intelligence Analysis (Richards Heuer's ACH)**: Dispassionate hypothesis falsification.
-- **Operations Research (Eliyahu Goldratt's CCPM)**: Centralized project buffers and Fever Chart tracking.
+It synthesizes five core engineering pillars:
+- **Context-Resilient State**: External file-based memory preventing context rot and hallucinations.
+- **The Executive Review Triad**: Rigorous pre-code critique (CEO, Engineering, and Design "Anti-Slop").
+- **Real Runtime Visual QA**: Live screen bounds, zero layout overflows, and physical ergonomics.
+- **Reactive Guardrails**: Automated reflexes protecting thermal limits, concurrency, and trust boundaries.
+- **Dispassionate ACH Falsification**: Mathematical hypothesis testing to eliminate single points of failure.
 
 ---
 
@@ -28,9 +28,9 @@ It synthesizes the architectural breakthroughs of top agentic frameworks:
    - [2. High-Speed Decision Engine (Drex vs Jev)](#2-high-speed-decision-engine-drex-vs-jev)
    - [3. Architecture & Code Judgment](#3-architecture--code-judgment)
    - [4. Dispassionate Multi-Possibility Synthesis (ACH & Pareto Frontier)](#4-dispassionate-multi-possibility-synthesis)
-3. [Anti-Context-Rot Architecture (GSD Integration)](#anti-context-rot-architecture-gsd-integration)
-4. [The 3-Role Review Triad & Visual QA (gstack Integration)](#the-3-role-review-triad--visual-qa-gstack-integration)
-5. [Reactive Agent Instincts & Harness Audit (ECC Integration)](#reactive-agent-instincts--harness-audit-ecc-integration)
+3. [Context-Resilient Architecture (External File-Based State)](#context-resilient-architecture)
+4. [The Executive Review Triad & Visual QA](#the-executive-review-triad--visual-qa)
+5. [Reactive Reflexes & Pre-Flight Readiness](#reactive-reflexes--pre-flight-readiness)
 6. [The 30-Minute Deep Planning Window (CCPM & Shape Up Integration)](#the-30-minute-deep-planning-window)
    - [Goldratt's Critical Chain Buffer Management (CCPM)](#goldratts-critical-chain-buffer-management-ccpm)
    - [Ryan Singer's Shape Up Appetite & Circuit Breakers](#ryan-singers-shape-up-appetite--circuit-breakers)
@@ -61,8 +61,8 @@ The `deadline` engine is stack-agnostic. It applies identical rigor whether buil
 2. **Dispassionate Synthesis**: Explore multiple architectural candidates. Reject emotional attachment, hype bias, or favorite patterns; pick solely based on empirical verification and disproof matrices (ACH).
 3. **Clarity Before Code**: Never write implementation code without an agreed target deadline, a calculated buffer budget, and a locked scope contract.
 4. **Pre-Mortem by Default**: Assume everything that can break will break. Audit against the 7 Closure Dimensions before drafting the plan.
-5. **Daemons Gate for Discovery**: Leverage pure-Go AST indexing via `daemons-gate` MCP (`repomap`, `tree`, `scan`) for sub-second codebase comprehension without exhausting token context.
-6. **Native Tools for Authoring**: All file creation, editing, and execution must strictly use Antigravity native tools (`read_file`, `write_file`, `edit_file`, `run_command`). External MCP write tools are prohibited.
+5. **Codebase Omni-Scanner for Discovery**: Leverage pure AST indexing via the Codebase Omni-Scanner (`scan_codebase`, `search_codebase`, `inspect_codebase`, `trace_codebase`) for sub-second comprehension without exhausting token context.
+6. **Native Tools for Authoring**: All file creation, editing, and execution must strictly use native tools (`read_file`, `write_file`, `edit_file`, `run_command`). External MCP write tools are prohibited.
 7. **Full Upfront Disclosure**: Every assumption, trade-off, and architectural fork must be brought to the surface during the Grill-Me session. No hidden surprises during execution.
 8. **Zero Continuation Prompts (The Autonomous Loop)**: Once `projectdeadline.md` is approved, the agent drives execution through all milestones consecutively to completion. The user should never have to prompt "continue", "next step", or "proceed".
 
@@ -126,13 +126,13 @@ Engineers routinely fail by falling in love with their first proposed design and
 
 ---
 
-## Anti-Context-Rot Architecture (GSD Integration)
+## Context-Resilient Architecture (External File-Based State)
 
-Derived from `gsd-build/get-shit-done`, **Context Rot** occurs when conversation token history exceeds 50% capacity, leading to cognitive fatigue, hallucinations, skipped tests, and forgotten constraints.
+**Context Rot** occurs when conversation token history exceeds 50% capacity, leading to cognitive fatigue, hallucinations, skipped tests, and forgotten constraints.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                 ANTI-CONTEXT-ROT SYSTEM ARCHITECTURE                   │
+│                 CONTEXT-RESILIENT SYSTEM ARCHITECTURE                  │
 ├───────────────────────────────────┬────────────────────────────────────┤
 │   EPHEMERAL CONVERSATION THREAD   │     DURABLE FILE-BASED MEMORY      │
 │   (Kept Lean, Low Token Usage)    │     (Single Source of Ground Truth)│
@@ -144,16 +144,16 @@ Derived from `gsd-build/get-shit-done`, **Context Rot** occurs when conversation
 └───────────────────────────────────┴────────────────────────────────────┘
 ```
 
-### The 3 GSD Operating Rules
+### The 3 Core Operating Rules
 1. **Externalize State Immediately**: Never store critical architectural decisions or milestone status solely in chat memory. Write them immediately to `projectdeadline.md`.
 2. **Subagent Execution Isolation**: Delegate broad file explorations, heavy test suites, or multi-file AST searches to fresh-context subagents (`invoke_subagent`), keeping the orchestrator pristine.
 3. **Wave-Based Execution**: Group non-dependent milestone tasks into parallel waves; execute sequentially without dragging conversational history forward.
 
 ---
 
-## The 3-Role Review Triad & Visual QA (gstack Integration)
+## The Executive Review Triad & Visual QA
 
-Derived from Garry Tan's `gstack`, the agent pressure-tests plans and executions through three distinct senior specialist lenses:
+The agent pressure-tests plans and executions through three distinct senior specialist lenses:
 
 ```
                   ┌────────────────────────────────────────┐
@@ -173,7 +173,7 @@ Derived from Garry Tan's `gstack`, the agent pressure-tests plans and executions
 
 ### Real Runtime Visual QA (`/qa`)
 Unit tests only prove logic; they do not prove that real users can interact with the screen without visual flaws.
-* **Web**: Use Playwright or DevTools MCP to capture live DOM snapshots, verify zero layout shifts, and test actual click handlers.
+* **Web**: Use Playwright or DevTools to capture live DOM snapshots, verify zero layout shifts, and test actual click handlers.
 * **Mobile (Android/Flutter)**: Use wireless ADB (`adb exec-out uiautomator dump`) to parse live UIAutomator XML bounds:
   - Confirm **ZERO RenderFlex overflow hazard stripes**.
   - Confirm **ZERO clipped text or unexpanded `...` truncations**.
@@ -181,9 +181,9 @@ Unit tests only prove logic; they do not prove that real users can interact with
 
 ---
 
-## Reactive Agent Instincts & Harness Audit (ECC Integration)
+## Reactive Reflexes & Pre-Flight Readiness
 
-Derived from Affaan Mustafa's `affaan-m/ecc`, **Instincts** are reflexive behavioral guardrails embedded into the agent that fire automatically when typical failure patterns emerge:
+**Reactive Reflexes** are behavioral guardrails embedded into the agent that fire automatically when typical failure patterns emerge:
 
 ### The 5 Agent Instincts
 1. **Null-Safety Reflex**: When designing DTOs or parsing API payloads, assume any field can be `null` or omitted; never force non-null assertions (`!`) without an explicit fallback.
@@ -349,29 +349,25 @@ Every milestone in `projectdeadline.md` must explicitly document:
 
 ---
 
-## Tooling Separation of Powers (The Deadline Daemon Discovery Stack)
+## Tooling Separation of Powers (Discovery vs. Native Execution)
 
 To prevent context exhaustion and ensure atomic, regression-free disk modifications, tools are divided into strict operational lanes:
 
 ```
 ┌────────────────────────────────────────────────────────┐     ┌──────────────────────────────────────┐
-│        DEADLINE DAEMON DISCOVERY & SCAN STACK          │     │       ANTIGRAVITY NATIVE TOOLS       │
+│                 CODEBASE OMNI-SCANNER                  │     │             NATIVE TOOLS             │
 │        (Strict Read-Only Structural Intelligence)      │     │      (Authoring & Execution)         │
 ├────────────────────────────────────────────────────────┤     ├──────────────────────────────────────┤
-│ 🔍 UPGRADED REA OMNI-SCANNER (Node.js Native AST)      │     │ • read_file (Precision line reading) │
+│ 🔍 STREAMING AST & PAGERANK REPOMAP                    │     │ • read_file (Precision line reading) │
 │ • scan_codebase: Full typed signatures + PageRank map  │     │ • write_file (Atomic file creation)  │
 │ • search_codebase: Sub-token BM25 FastContext scoring   │     │ • edit_file (Surgical replacements)  │
 │ • inspect_codebase: Zero-allocation skeleton/focus fold│     │ • run_command (Tests, builds, git)   │
 │ • trace_codebase: Bidirectional call graph traversal   │     │                                      │
-│                                                        │     │                                      │
-│ 🛡️ DAEMONS GATE MCP SERVER (Go AST & Subprocesses)     │     │                                      │
-│ • scan: Fast file tree & token-bounded search          │     │                                      │
-│ • pty_terminal / verify: Terminal execution isolation  │     │                                      │
 └────────────────────────────────────────────────────────┘     └──────────────────────────────────────┘
 ```
 
 > [!CAUTION]
-> **Strict Read-Only Tool Boundary**: REA and external MCP scanners operate under a zero-write contract (`writesFilesystem: false, mutatesTarget: false`). All file writes, modifications, and creations belong exclusively to Antigravity native tools (`write_file`, `edit_file`). Never allow external scanners to mutate disk state.
+> **Strict Read-Only Tool Boundary**: The Codebase Omni-Scanner operates under a zero-write contract (`writesFilesystem: false, mutatesTarget: false`). All file writes, modifications, and creations belong exclusively to native tools (`write_file`, `edit_file`).
 
 ---
 
@@ -389,8 +385,8 @@ To prevent context exhaustion and ensure atomic, regression-free disk modificati
                            │
                            ▼
 ┌────────────────────────────────────────────────────────┐
-│ Phase 2: Daemons Gate Deep AST Scan                    │
-│ • Run daemons-gate scan (op='repomap' & 'tree')        │
+│ Phase 2: Codebase Omni-Scanner Deep AST Scan           │
+│ • Run scan_codebase (mode='repomap' & 'tree')          │
 │ • Identify delta between spec and codebase reality     │
 └──────────────────────────┬─────────────────────────────┘
                            │
@@ -498,7 +494,7 @@ The `deadline` engine acts as the **Grand Orchestrator** controlling and routing
 | Lifecycle Phase | Problem Domain | Master Orchestrated Skill | Synergy / Companion Skill |
 | :--- | :--- | :--- | :--- |
 | **Phase 1: Ingestion & Contracts** | **Schema & API Contract Locking** | [`contract-first`](file:///C:/Users/mrleo/.gemini/config/skills/contract-first/SKILL.md) | [`domain-modeling`](file:///C:/Users/mrleo/.gemini/config/skills/domain-modeling/SKILL.md) |
-| **Phase 2: Discovery & Ripple** | **Predictive Blast-Radius Analysis** | [`change-impact`](file:///C:/Users/mrleo/.gemini/config/skills/change-impact/SKILL.md) | `daemons-gate` (`repomap`, `tree`, `scan`) |
+| **Phase 2: Discovery & Ripple** | **Predictive Blast-Radius Analysis** | [`change-impact`](file:///C:/Users/mrleo/.gemini/config/skills/change-impact/SKILL.md) | `scan_codebase` / `trace_codebase` |
 | **Phase 3: Wave Decomposition** | **Anti-Context-Rot Task Planning** | [`gsd-planner`](file:///C:/Users/mrleo/.gemini/config/skills/gsd-planner/SKILL.md) | [`database-migrations`](file:///C:/Users/mrleo/.gemini/config/skills/database-migrations/SKILL.md) |
 | **Phase 4: Founder Review** | **CEO Value & Emergency Cutline** | [`plan-ceo-review`](file:///C:/Users/mrleo/.gemini/config/skills/plan-ceo-review/SKILL.md) | [`grilling`](file:///C:/Users/mrleo/.gemini/config/skills/grilling/SKILL.md) |
 | **Phase 4: Architecture Review** | **Staff Eng SPOF & Seam Audit** | [`plan-eng-review`](file:///C:/Users/mrleo/.gemini/config/skills/plan-eng-review/SKILL.md) | [`improve-codebase-architecture`](file:///C:/Users/mrleo/.gemini/config/skills/improve-codebase-architecture/SKILL.md) |

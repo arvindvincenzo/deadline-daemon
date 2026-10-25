@@ -45,14 +45,14 @@ foreach ($tmpl in $expectedTemplates) {
     Write-Host "  [+] Template verified: $tmpl" -ForegroundColor Green
 }
 
-# 3. REA Omni-Scanner Engine Verification
-Write-Host "`n[3/3] Running Upgraded REA Codebase Omni-Scanner Tests..." -ForegroundColor Yellow
-$reaDir = Join-Path $ProjectRoot "packages\rea"
-Push-Location $reaDir
+# 3. Codebase Omni-Scanner Engine Verification
+Write-Host "`n[3/3] Running Codebase Omni-Scanner Tests..." -ForegroundColor Yellow
+$scannerDir = Join-Path $ProjectRoot "packages\scanner"
+Push-Location $scannerDir
 try {
     node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/verify_codebase_scanner.ts
     if ($LASTEXITCODE -ne 0) {
-        Write-Error "REA Codebase Scanner tests failed with exit code $LASTEXITCODE"
+        Write-Error "Codebase Scanner tests failed with exit code $LASTEXITCODE"
         exit 1
     }
 } finally {

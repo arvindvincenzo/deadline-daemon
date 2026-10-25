@@ -3,11 +3,11 @@ name: gsd-planner
 description: Context-efficient task decomposition and wave-based execution planner. Splits complex project milestones into atomic, checkable sub-tasks, structures parallel execution waves, and enforces anti-context-rot discipline.
 ---
 
-# GSD Planner — Wave-Based Milestone Decomposition
+# Wave Planner — Context-Efficient Task Decomposition
 
 The **gsd-planner** skill decomposes high-level milestones into atomic, self-contained execution tasks organized in **dependency-free parallel waves**.
 
-Derived from the Get Shit Done (GSD) framework, it is engineered to prevent **Context Rot** by keeping each task unit small, verifiable, and bounded.
+It is engineered to prevent **Context Rot** by keeping each task unit small, verifiable, and strictly bounded.
 
 ---
 
@@ -18,7 +18,7 @@ Derived from the Get Shit Done (GSD) framework, it is engineered to prevent **Co
 
 ---
 
-## The 3 GSD Planning Laws
+## The 3 Core Planning Laws
 
 ### 1. The Atomic Chunk Rule
 - Every task must touch $\le 3$ files and be verifiable with a single test or build command.
