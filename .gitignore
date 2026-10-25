@@ -1,0 +1,9 @@
+*.exe
+*.log
+node_modules/
+.rea/
+.agent-wt/
+.agentguard/
+.deps-cache/
+dist/
+build/
