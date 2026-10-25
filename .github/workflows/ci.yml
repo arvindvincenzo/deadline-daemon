@@ -8,7 +8,7 @@ on:
 
 jobs:
   verify:
-    name: Verify Deadline Daemon & REA Scanner
+    name: Verify Deadline Daemon & Codebase Omni-Scanner (${{ matrix.node-version }})
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Run Deadline Daemon Verification Script
+      - name: Run Deadline Daemon Verification Quality Gate
         run: |
           chmod +x ./scripts/verify.sh
           ./scripts/verify.sh
