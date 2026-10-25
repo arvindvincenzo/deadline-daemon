@@ -1,4 +1,4 @@
-# Deadline Engine — Automated Installer for Windows / Antigravity / Claude Code
+# Deadline Daemon — Automated Skills Installer
 
 param(
     [string]$TargetDir = "$HOME\.gemini\config\skills"
@@ -32,4 +32,4 @@ foreach ($skill in $skills) {
 }
 
 Write-Host "`nAll 12 skills successfully installed into $TargetDir!" -ForegroundColor Cyan
-Write-Host "To use, run: 'use the deadline skill' or type '/plan' in Antigravity or Claude Code." -ForegroundColor Yellow
+Write-Host "To use, activate the 'deadline' skill or run '/plan'." -ForegroundColor Yellow

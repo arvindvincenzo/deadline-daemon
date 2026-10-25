@@ -1,7 +1,7 @@
 {
   "name": "deadline-daemon",
   "version": "1.0.0",
-  "description": "Autonomous deadline-driven engineering architecture combining the Deadline Method with the Upgraded REA Codebase Omni-Scanner.",
+  "description": "Autonomous deadline-driven engineering architecture combining the Deadline Method with the Codebase Omni-Scanner.",
   "type": "module",
   "private": true,
   "workspaces": [
@@ -20,11 +20,11 @@
     "ast-scanner",
     "pagerank",
     "repomap",
-    "reverse-engineering",
-    "gsd",
-    "gstack",
-    "ecc"
+    "wave-planner",
+    "runtime-qa",
+    "codebase-scanner",
+    "engineering"
   ],
   "author": "Deadline Daemon Engineering Team",
-  "license": "Apache-2.0"
+  "license": "MIT"
 }

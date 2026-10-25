@@ -1,7 +1,7 @@
 # Deadline Daemon ⏱️⚡
 
 [![CI](https://github.com/arvindvincenzo/deadline-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/arvindvincenzo/deadline-daemon/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/Node.js-22%2B-green.svg)](https://nodejs.org/)
 [![Safety](https://img.shields.io/badge/Scanner_Safety-Strict_Read--Only-blueviolet.svg)](#strict-safety-invariants)
 [![Skills](https://img.shields.io/badge/Skills-12_Specialized_Agents-orange.svg)](#the-12-specialized-agent-skills)
@@ -68,8 +68,8 @@ deadline-daemon/
 │       └── package.json           # Scanner package manifest
 ├── skills/                        # 12 Specialized Agent Skills
 │   ├── deadline/                  # Master Deadline Orchestrator & Critical Thinker
-│   ├── gsd-planner/               # Context-efficient wave-based task decomposition
-│   ├── gstack-qa/                 # Live runtime visual QA & physical ergonomics
+│   ├── wave-planner/              # Context-efficient wave-based task decomposition
+│   ├── runtime-qa/                # Live runtime visual QA & physical ergonomics
 │   ├── plan-ceo-review/           # Customer value, moat audit, and cutlines
 │   ├── plan-eng-review/           # SPOF elimination, ACH disproof, blast radius
 │   ├── plan-design-review/        # Anti-slop UX, microcopy truth, 48x48dp bounds
@@ -90,7 +90,7 @@ deadline-daemon/
 │   └── verify.ps1                 # Windows quality gate runner
 ├── .gitignore                     # Production Git ignore
 ├── CONTRIBUTING.md                # Community contribution guidelines
-├── LICENSE                        # Apache 2.0 License
+├── LICENSE                        # MIT License
 ├── package.json                   # Root monorepo workspace manifest
 └── README.md                      # Project documentation
 ```
@@ -136,8 +136,8 @@ npm test
 | Skill | Path | Description |
 | :--- | :--- | :--- |
 | **`deadline`** | [`skills/deadline`](skills/deadline/SKILL.md) | **Master Orchestrator**: The Critical Thinker loop, 4-Round Grill-Me protocol, ACH hypothesis falsification, Goldratt CCPM buffer management, and zero-nudge autonomous execution. |
-| **`gsd-planner`** | [`skills/gsd-planner`](skills/gsd-planner/SKILL.md) | Decomposes complex features into atomic, testable milestone waves under strict context-window ceilings. |
-| **`gstack-qa`** | [`skills/gstack-qa`](skills/gstack-qa/SKILL.md) | Runtime UI inspector: drives Playwright or ADB to detect RenderFlex hazard stripes, text truncation, and $<48\times 48\text{dp}$ touch targets. |
+| **`wave-planner`** | [`skills/wave-planner`](skills/wave-planner/SKILL.md) | Decomposes complex features into atomic, testable milestone waves under strict context-window ceilings. |
+| **`runtime-qa`** | [`skills/runtime-qa`](skills/runtime-qa/SKILL.md) | Runtime UI inspector: drives Playwright or ADB to detect RenderFlex hazard stripes, text truncation, and $<48\times 48\text{dp}$ touch targets. |
 | **`plan-ceo-review`** | [`skills/plan-ceo-review`](skills/plan-ceo-review/SKILL.md) | Evaluates user impact, competitive moats, and sets emergency scope cutlines before writing code. |
 | **`plan-eng-review`** | [`skills/plan-eng-review`](skills/plan-eng-review/SKILL.md) | Audits system architecture for single points of failure (SPOFs), blast radius, and modules depth. |
 | **`plan-design-review`** | [`skills/plan-design-review`](skills/plan-design-review/SKILL.md) | Eliminates UI slop: audits microcopy truth, interactive hit bounds, and all 10 screen lifecycle states. |
@@ -183,4 +183,4 @@ The scanner operates under a mathematically verified **Read-Only Invariant**:
 
 ## License
 
-Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.
+Licensed under the MIT License. See [LICENSE](LICENSE) for details.

@@ -11,7 +11,7 @@ echo "================================================="
 echo -e "\n[1/3] Auditing 12 Specialized Agent Skills..."
 SKILLS_DIR="$PROJECT_ROOT/skills"
 EXPECTED_SKILLS=(
-    "deadline" "gsd-planner" "gstack-qa" "plan-ceo-review" 
+    "deadline" "wave-planner" "runtime-qa" "plan-ceo-review" 
     "plan-eng-review" "plan-design-review" "verification-loop" 
     "cso" "ship" "change-impact" "contract-first" "database-migrations"
 )

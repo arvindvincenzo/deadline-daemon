@@ -12,7 +12,7 @@ Write-Host "=================================================" -ForegroundColor 
 Write-Host "`n[1/3] Auditing 12 Specialized Agent Skills..." -ForegroundColor Yellow
 $skillsDir = Join-Path $ProjectRoot "skills"
 $expectedSkills = @(
-    "deadline", "gsd-planner", "gstack-qa", "plan-ceo-review", 
+    "deadline", "wave-planner", "runtime-qa", "plan-ceo-review", 
     "plan-eng-review", "plan-design-review", "verification-loop", 
     "cso", "ship", "change-impact", "contract-first", "database-migrations"
 )

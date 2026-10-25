@@ -495,7 +495,7 @@ The `deadline` engine acts as the **Grand Orchestrator** controlling and routing
 | :--- | :--- | :--- | :--- |
 | **Phase 1: Ingestion & Contracts** | **Schema & API Contract Locking** | [`contract-first`](file:///C:/Users/mrleo/.gemini/config/skills/contract-first/SKILL.md) | [`domain-modeling`](file:///C:/Users/mrleo/.gemini/config/skills/domain-modeling/SKILL.md) |
 | **Phase 2: Discovery & Ripple** | **Predictive Blast-Radius Analysis** | [`change-impact`](file:///C:/Users/mrleo/.gemini/config/skills/change-impact/SKILL.md) | `scan_codebase` / `trace_codebase` |
-| **Phase 3: Wave Decomposition** | **Anti-Context-Rot Task Planning** | [`gsd-planner`](file:///C:/Users/mrleo/.gemini/config/skills/gsd-planner/SKILL.md) | [`database-migrations`](file:///C:/Users/mrleo/.gemini/config/skills/database-migrations/SKILL.md) |
+| **Phase 3: Wave Decomposition** | **Context-Resilient Task Planning** | [`wave-planner`](file:///C:/Users/mrleo/.gemini/config/skills/wave-planner/SKILL.md) | [`database-migrations`](file:///C:/Users/mrleo/.gemini/config/skills/database-migrations/SKILL.md) |
 | **Phase 4: Founder Review** | **CEO Value & Emergency Cutline** | [`plan-ceo-review`](file:///C:/Users/mrleo/.gemini/config/skills/plan-ceo-review/SKILL.md) | [`grilling`](file:///C:/Users/mrleo/.gemini/config/skills/grilling/SKILL.md) |
 | **Phase 4: Architecture Review** | **Staff Eng SPOF & Seam Audit** | [`plan-eng-review`](file:///C:/Users/mrleo/.gemini/config/skills/plan-eng-review/SKILL.md) | [`improve-codebase-architecture`](file:///C:/Users/mrleo/.gemini/config/skills/improve-codebase-architecture/SKILL.md) |
 | **Phase 4: Design Review** | **Anti-Slop UX & Microcopy Truth** | [`plan-design-review`](file:///C:/Users/mrleo/.gemini/config/skills/plan-design-review/SKILL.md) | [`ui-ux-pro-max`](file:///C:/Users/mrleo/.gemini/config/skills/ui-ux-pro-max/SKILL.md) |
@@ -503,7 +503,7 @@ The `deadline` engine acts as the **Grand Orchestrator** controlling and routing
 | **Phase 6: Logic & TDD** | **Hermetic Unit & Integration Tests** | [`tdd`](file:///C:/Users/mrleo/.gemini/config/skills/tdd/SKILL.md) | [`dart-add-unit-test`](file:///C:/Users/mrleo/.gemini/config/plugins/flutter/skills/dart-add-unit-test/SKILL.md) |
 | **Phase 6: Security Audit** | **OWASP & Secret Vulnerability Scan** | [`cso`](file:///C:/Users/mrleo/.gemini/config/skills/cso/SKILL.md) | [`diagnosing-bugs`](file:///C:/Users/mrleo/.gemini/config/skills/diagnosing-bugs/SKILL.md) |
 | **Phase 6: Quality Gate** | **6-Phase Hermetic Verification** | [`verification-loop`](file:///C:/Users/mrleo/.gemini/config/skills/verification-loop/SKILL.md) | [`flutter-add-widget-test`](file:///C:/Users/mrleo/.gemini/config/plugins/flutter/skills/flutter-add-widget-test/SKILL.md) |
-| **Phase 6: Runtime Visual QA** | **Real Screen & Physical Bounds** | [`gstack-qa`](file:///C:/Users/mrleo/.gemini/config/skills/gstack-qa/SKILL.md) | `adb exec-out uiautomator dump` / Playwright |
+| **Phase 6: Runtime Visual QA** | **Real Screen & Physical Bounds** | [`runtime-qa`](file:///C:/Users/mrleo/.gemini/config/skills/runtime-qa/SKILL.md) | `adb exec-out uiautomator dump` / Playwright |
 | **Completion: Production** | **Release Manifest & Turnkey Ship** | [`ship`](file:///C:/Users/mrleo/.gemini/config/skills/ship/SKILL.md) | [`retro`](file:///C:/Users/mrleo/.gemini/config/skills/retro/SKILL.md) |
 | **Fallback: Missing Capability**| **Dynamic Discovery Engine** | [`find-skills`](file:///C:/Users/mrleo/.gemini/config/skills/find-skills/SKILL.md) | `search_web` + `npx skills find` |
 

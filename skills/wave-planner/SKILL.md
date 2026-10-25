@@ -1,11 +1,11 @@
 ---
-name: gsd-planner
+name: wave-planner
 description: Context-efficient task decomposition and wave-based execution planner. Splits complex project milestones into atomic, checkable sub-tasks, structures parallel execution waves, and enforces anti-context-rot discipline.
 ---
 
 # Wave Planner — Context-Efficient Task Decomposition
 
-The **gsd-planner** skill decomposes high-level milestones into atomic, self-contained execution tasks organized in **dependency-free parallel waves**.
+The **wave-planner** skill decomposes high-level milestones into atomic, self-contained execution tasks organized in **dependency-free parallel waves**.
 
 It is engineered to prevent **Context Rot** by keeping each task unit small, verifiable, and strictly bounded.
 
@@ -40,7 +40,7 @@ It is engineered to prevent **Context Rot** by keeping each task unit small, ver
 ## Output Report Format: Wave-Based Task Plan
 
 ```markdown
-### 🌊 GSD Wave Execution Plan
+### 🌊 Wave Execution Plan
 
 #### Wave 1: Foundation (Zero Dependencies)
 - [ ] Task 1.1: [Contract / Model definition] (Files: `lib/models/...`)

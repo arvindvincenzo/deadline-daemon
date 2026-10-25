@@ -27,4 +27,4 @@ for skill_dir in "$SOURCE_SKILLS_DIR"/*/; do
 done
 
 echo -e "\nAll 12 skills successfully installed into $TARGET_DIR!"
-echo "To use, run: 'use the deadline skill' or type '/plan' in Antigravity or Claude Code."
+echo "To use, activate the 'deadline' skill or run '/plan'."
