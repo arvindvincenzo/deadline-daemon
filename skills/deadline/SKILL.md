@@ -1,6 +1,6 @@
 ---
 name: deadline
-description: Universal workflow-based deadline planning and execution skill powered by the Critical Thinker Engine. Synthesizes principles from GSD (Anti-Context-Rot, file-based memory), gstack (CEO/Eng/Design review triad, real runtime QA), and ECC (agent instincts, harness pre-flight), along with Daemons Gate MCP scanning, ACH hypothesis falsification, Goldratt CCPM buffer management, the 7-Dimension "Nothing-Missed" matrix, and zero-nudge autonomous execution.
+description: Universal workflow-based deadline planning and execution skill powered by the Critical Thinker Engine. Synthesizes principles from GSD (Anti-Context-Rot, file-based memory), gstack (CEO/Eng/Design review triad, real runtime QA), and ECC (agent instincts, harness pre-flight), along with the Upgraded REA Codebase Omni-Scanner, ACH hypothesis falsification, Goldratt CCPM buffer management, the 7-Dimension "Nothing-Missed" matrix, and zero-nudge autonomous execution.
 ---
 
 # Deadline — Universal Milestone-Driven Planning & Execution Engine
