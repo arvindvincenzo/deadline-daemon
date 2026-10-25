@@ -1,105 +1,186 @@
-# Deadline Daemon
+# Deadline Daemon ⏱️⚡
+
+[![CI](https://github.com/Arunaah/deadline-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/Arunaah/deadline-daemon/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/Node.js-22%2B-green.svg)](https://nodejs.org/)
+[![Safety](https://img.shields.io/badge/Scanner_Safety-Strict_Read--Only-blueviolet.svg)](#strict-safety-invariants)
+[![Skills](https://img.shields.io/badge/Skills-12_Specialized_Agents-orange.svg)](#the-12-specialized-agent-skills)
 
 **Deadline Daemon** is an autonomous engineering architecture combining rigorous, deadline-driven execution with forensic-grade, multi-target codebase scanning.
 
+It fuses the **Deadline Method** (powered by GSD anti-context-rot, the gstack review triad, and ECC reactive instincts) with the **Upgraded REA Codebase Omni-Scanner** (zero-dependency AST parsing, Personalized PageRank repomaps, and 130+ forensic reverse engineering tools).
+
 ```
-                               ┌──────────────────────────────────────────────┐
-                               │               DEADLINE DAEMON                │
-                               │        Autonomous Engineering Engine         │
-                               └──────────────────────┬───────────────────────┘
-                                                      │
-                       ┌──────────────────────────────┴──────────────────────────────┐
-                       │                                                             │
-                       ▼                                                             ▼
-       ┌───────────────────────────────┐                             ┌───────────────────────────────┐
-       │        DEADLINE METHOD        │                             │        REA OMNI-SCANNER       │
-       │    (Workflow & Governance)    │                             │    (Discovery & Inspection)   │
-       ├───────────────────────────────┤                             ├───────────────────────────────┤
-       │ • Interactive Grill & Plan    │                             │ • Multi-Language AST Lexer    │
-       │ • Wave-Based Parallelism      │                             │ • PageRank Repomap (PPR)      │
-       │ • Context Sufficiency Gate    │                             │ • Skeleton & Focus Folder     │
-       │ • Strict Anti-Context-Rot     │                             │ • FastContext Localizer       │
-       │ • 6-Phase Verification Loop   │                             │ • 130+ Binary & Dynamic Tools │
-       │ • Production Ship Engine      │                             │ • STRICT ZERO-WRITE POLICY    │
-       └───────────────────────────────┘                             └───────────────────────────────┘
+                                ┌──────────────────────────────────────────────┐
+                                │               DEADLINE DAEMON                │
+                                │        Autonomous Engineering Engine         │
+                                └──────────────────────┬───────────────────────┘
+                                                       │
+                        ┌──────────────────────────────┴──────────────────────────────┐
+                        │                                                             │
+                        ▼                                                             ▼
+        ┌───────────────────────────────┐                             ┌───────────────────────────────┐
+        │        DEADLINE METHOD        │                             │        REA OMNI-SCANNER       │
+        │    (Workflow & Governance)    │                             │    (Discovery & Inspection)   │
+        ├───────────────────────────────┤                             ├───────────────────────────────┤
+        │ • 4-Round Grill ➔ Plan Loop   │                             │ • Multi-Language AST Lexer    │
+        │ • 3-Role Review Triad         │                             │ • Personalized PageRank (PPR) │
+        │ • 7-Dimension Closure Matrix  │                             │ • Skeleton & Focus Code Folder│
+        │ • Goldratt CCPM Buffer Engine │                             │ • FastContext BM25 Localizer  │
+        │ • Anti-Context-Rot Memory     │                             │ • 130+ Binary & Dynamic Tools │
+        │ • Turnkey Verification Seal   │                             │ • STRICT ZERO-WRITE POLICY    │
+        └───────────────┬───────────────┘                             └───────────────┬───────────────┘
+                        │                                                             │
+                        └──────────────────────────────┬──────────────────────────────┘
+                                                       │
+                                                       ▼
+                                      ┌─────────────────────────────────┐
+                                      │    ANTIGRAVITY NATIVE TOOLS     │
+                                      │    (Atomic Authoring & Run)     │
+                                      ├─────────────────────────────────┤
+                                      │ • read_file / write_file        │
+                                      │ • edit_file (Surgical diffs)    │
+                                      │ • run_command (Tests, builds)   │
+                                      └─────────────────────────────────┘
 ```
 
 ---
 
-## 1. Project Overview & Component Topology
+## Path-Based Project Topology
 
-| Component | Directory | Role & Authority |
+```
+deadline-daemon/
+├── .github/
+│   └── workflows/
+│       └── ci.yml                 # Automated CI pipeline (Node 22/24 test runners)
+├── docs/
+│   ├── ARCHITECTURE.md            # Deep system architecture & invariants
+│   ├── GRILL_AND_THRILL.md        # The 4-Round Critical Grill-Me Protocol
+│   └── REA_SCANNER.md             # Omni-Scanner algorithm & API reference
+├── packages/
+│   └── rea/                       # Upgraded REA Omni-Scanner MCP Server & Reversing Engine
+│       ├── src/
+│       │   ├── domain/codebase/   # AST Lexer, RepoMap PageRank, Skeletonizer, FastContext
+│       │   ├── application/       # SQLite incremental cache, Scanner Service
+│       │   ├── contracts/         # Zod schemas, Tool contracts, strict read-only effects
+│       │   └── server/            # MCP server dispatcher & tool registration
+│       ├── scripts/               # Test runners & ts-loader
+│       └── package.json           # REA package manifest
+├── skills/                        # 12 Specialized Agent Skills
+│   ├── deadline/                  # Master Deadline Orchestrator & Critical Thinker
+│   ├── gsd-planner/               # Context-efficient wave-based task decomposition
+│   ├── gstack-qa/                 # Live runtime visual QA & physical ergonomics
+│   ├── plan-ceo-review/           # Customer value, moat audit, and cutlines
+│   ├── plan-eng-review/           # SPOF elimination, ACH disproof, blast radius
+│   ├── plan-design-review/        # Anti-slop UX, microcopy truth, 48x48dp bounds
+│   ├── verification-loop/         # 6-phase hermetic build, lint, type & test score
+│   ├── cso/                       # OWASP top 10 & secret leak audit
+│   ├── ship/                      # Production shipping engine & clean hygiene
+│   ├── change-impact/             # Inbound/outbound caller impact graph
+│   ├── contract-first/            # Interface locking & validation boundaries
+│   └── database-migrations/       # Zero-downtime reversible schema drift prevention
+├── templates/
+│   ├── project.md.tmpl            # Initial spec template
+│   ├── projectdeadline.md.tmpl    # Production deadline tracking contract
+│   └── walkthrough.md.tmpl        # Post-deadline delivery & verification seal
+├── scripts/
+│   ├── install.sh                 # Linux/macOS skills installer
+│   ├── install.ps1                # Windows skills installer
+│   ├── verify.sh                  # Linux/macOS quality gate runner
+│   └── verify.ps1                 # Windows quality gate runner
+├── .gitignore                     # Production Git ignore
+├── CONTRIBUTING.md                # Community contribution guidelines
+├── LICENSE                        # Apache 2.0 License
+├── package.json                   # Root monorepo workspace manifest
+└── README.md                      # Project documentation
+```
+
+---
+
+## Quickstart
+
+### 1. Install Skills
+Install the 12 specialized skills into your local agent environment (`~/.gemini/config/skills` or `.agents/skills`):
+
+**On Windows (PowerShell):**
+```powershell
+npm run install:skills
+# or: powershell -ExecutionPolicy Bypass -File .\scripts\install.ps1
+```
+
+**On Linux / macOS (Bash):**
+```bash
+chmod +x ./scripts/install.sh
+./scripts/install.sh
+```
+
+### 2. Run Quality Gate & Tests
+Validate all 12 skills, templates, and the REA Codebase Omni-Scanner:
+
+**On Windows:**
+```powershell
+npm run verify
+# or: powershell -ExecutionPolicy Bypass -File .\scripts\verify.ps1
+```
+
+**On Linux / macOS:**
+```bash
+npm test
+# or: ./scripts/verify.sh
+```
+
+---
+
+## The 12 Specialized Agent Skills
+
+| Skill | Path | Description |
 | :--- | :--- | :--- |
-| **Deadline Method** | `deadline method/deadline/` | Master execution workflow, verification protocols, anti-context-rot discipline, and 11 specialized agent skills. |
-| **REA Omni-Scanner** | `rea-main/` | Unified codebase discovery, token-budgeted PageRank repomap, AST code skeletonization, and 130+ forensic reverse engineering tools. **Strictly Read-Only**. |
-| **Daemons Gate Reference** | `daemons-gate/` | Reference architecture for pure AST parsing, token budgeting, and system-level gates. |
+| **`deadline`** | [`skills/deadline`](skills/deadline/SKILL.md) | **Master Orchestrator**: The Critical Thinker loop, 4-Round Grill-Me protocol, ACH hypothesis falsification, Goldratt CCPM buffer management, and zero-nudge autonomous execution. |
+| **`gsd-planner`** | [`skills/gsd-planner`](skills/gsd-planner/SKILL.md) | Decomposes complex features into atomic, testable milestone waves under strict context-window ceilings. |
+| **`gstack-qa`** | [`skills/gstack-qa`](skills/gstack-qa/SKILL.md) | Runtime UI inspector: drives Playwright or ADB to detect RenderFlex hazard stripes, text truncation, and $<48\times 48\text{dp}$ touch targets. |
+| **`plan-ceo-review`** | [`skills/plan-ceo-review`](skills/plan-ceo-review/SKILL.md) | Evaluates user impact, competitive moats, and sets emergency scope cutlines before writing code. |
+| **`plan-eng-review`** | [`skills/plan-eng-review`](skills/plan-eng-review/SKILL.md) | Audits system architecture for single points of failure (SPOFs), blast radius, and modules depth. |
+| **`plan-design-review`** | [`skills/plan-design-review`](skills/plan-design-review/SKILL.md) | Eliminates UI slop: audits microcopy truth, interactive hit bounds, and all 10 screen lifecycle states. |
+| **`verification-loop`** | [`skills/verification-loop`](skills/verification-loop/SKILL.md) | 6-phase hermetic verification scoring: build, types, linter, test coverage, security grep, and git diff. |
+| **`cso`** | [`skills/cso`](skills/cso/SKILL.md) | Chief Security Officer audit: scans for hardcoded secrets, injection vectors, and broken access controls. |
+| **`ship`** | [`skills/ship`](skills/ship/SKILL.md) | Release engine: validates pre-flight suites, generates manifests, and executes verified deployments. |
+| **`change-impact`** | [`skills/change-impact`](skills/change-impact/SKILL.md) | Traces caller trees and affected screens to eliminate surprise regressions before code modification. |
+| **`contract-first`** | [`skills/contract-first`](skills/contract-first/SKILL.md) | Locks interface schemas, DTOs, and serialization contracts before business logic is authored. |
+| **`database-migrations`**| [`skills/database-migrations`](skills/database-migrations/SKILL.md) | Enforces non-blocking DDL, backward-compatible migrations, and tested rollback scripts. |
 
 ---
 
-## 2. Upgraded REA Omni-Scanning Engine
+## Upgraded REA Omni-Scanner vs. Daemons Gate
 
-REA has been elevated beyond Daemons Gate's scanning performance by synthesizing its core intelligence mechanisms into native Node 22/26 TypeScript using `node:sqlite`:
+REA's integrated codebase scanner significantly outclasses traditional pure-Go scanners while maintaining zero external runtime dependencies:
 
-1. **Multi-Language AST Lexer (`src/domain/codebase/codebaseLexer.ts`):**
-   - Pure, zero-dependency streaming symbol extraction across TypeScript, JavaScript, Python, Go, Rust, Dart, C/C++, Java, and Swift.
-   - Extracts dense signatures (`func:name(args): ret`), preceding docstrings/JSDoc, and qualified SCIP identifiers (`path#Type#Method().`).
-
-2. **Personalized PageRank RepoMap (`src/domain/codebase/repoMapBuilder.ts`):**
-   - Weighted multigraph construction: $\text{weight} = \mu \times \sqrt{\text{refs}}$ (self-edges dampened to $0.1$).
-   - Power iteration ($d = 0.85$, $30$ iterations) with **Topic-Sensitive / Personalized PageRank (PPR)** teleportation vectors biased toward query or focused files.
-   - Greedy packing under strict token budgets (`budget_tokens`).
-
-3. **Source Code Skeletonizer (`src/domain/codebase/sourceSkeletonizer.ts`):**
-   - Space-efficient source views saving ~85% of LLM context window tokens.
-   - **`mode: "skeleton"`**: Folds function bodies into single comment lines (`/* ... (N lines body omitted) ... */`), keeping classes, interfaces, and signatures visible.
-   - **`mode: "focus"`**: Expands only the targeted symbol's implementation in full while keeping surrounding sibling functions folded.
-
-4. **FastContext Query Localizer (`src/domain/codebase/fastContextLocalizer.ts`):**
-   - Natural-language query localization with stopword filtering and sub-token splitting (camelCase and snake_case).
-   - Generates line-level frequency scoring, path-affinity bonuses, and explanatory `Why` tags.
-
-5. **Directory Tree Scanner (`src/domain/codebase/codebaseTreeScanner.ts`):**
-   - Traverses directories with `.gitignore` compliance, depth bounds, and automatic secret redaction (`.env`, `*.pem`, `id_rsa`, `*.key`, `credentials.json`).
-
-6. **Persistent Incremental SQLite Cache (`src/application/codebase/CodebaseIndexStore.ts`):**
-   - Native Node standard-library `node:sqlite` (`DatabaseSync`).
-   - Mtime and SHA-256 gating ensuring $<2\text{ms}$ incremental re-indexing.
-   - Built-in Levenshtein edit-distance suggestion (`suggestSimilarSymbols`) to auto-correct agent typos and prevent wasted round-trips.
+| Feature | Legacy Scanners (Daemons Gate) | **Upgraded REA Omni-Scanner** |
+| :--- | :--- | :--- |
+| **AST Signatures** | Symbol name only (`│func:Run`) | **Full Typed Signatures** (`│func:Run(ctx: Ctx): Promise<Res>`) |
+| **Graph Algorithm** | Uniform PageRank | **Personalized PageRank (PPR)** biased by query |
+| **Code Folding** | Indiscriminately strips comments | **Preserves JSDoc/rustdoc** + dual `skeleton`/`focus` modes |
+| **Lexical Search** | Substring / line frequency | **BM25 FastContext** with `camelCase`/`snake_case` sub-tokens |
+| **Fuzzy Discovery** | Exact match only | **Levenshtein Typo Distance** suggestions |
+| **Caching Engine** | CGO SQLite dependency | **Zero-Dependency Native Node.js** (`node:sqlite`) |
+| **Write Surface** | Includes file-modifying tools | **Strictly Read-Only Guarantee** (`writesFilesystem: false`) |
 
 ---
 
-## 3. Strict Safety & Read-Only Invariants
+## Strict Safety Invariants
 
-REA operates under a **non-negotiable read-only invariant**:
-- **ZERO write tools.** No `workspace_edit`, no `create`, no `patch`, no `delete`.
-- All 4 new tools (`scan_codebase`, `search_codebase`, `inspect_codebase`, `trace_codebase`) are formally audited with:
-  ```ts
+REA operates under a mathematically verified **Read-Only Invariant**:
+- **Zero Disk Modification Tools**: REA contains no file editing, creating, patching, or deleting capabilities.
+- All 4 scanner tools (`scan_codebase`, `search_codebase`, `inspect_codebase`, `trace_codebase`) enforce:
+  ```typescript
   writesFilesystem: false,
   mutatesTarget: false,
   mayDiscardData: false,
   idempotent: true
   ```
-- File modifications and workspace transactions remain exclusively governed by native agent tools under the Deadline Method.
+- File authoring and modifications remain exclusively governed by native agent tools (`write_file`, `edit_file`) under the Deadline Method.
 
 ---
 
-## 4. Verification & Test Suite
+## License
 
-The upgraded engine is verified with automated tests covering all domain models, storage engines, and safety floors:
-```bash
-node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/verify_codebase_scanner.ts
-```
-Output:
-```
-=== Testing Codebase Scanner for REA ===
-✔ CodebaseLexer: TS extraction passed
-✔ CodebaseLexer: Go method extraction passed
-✔ SourceSkeletonizer: skeleton and focus modes passed
-✔ RepoMapBuilder: PageRank multigraph and budget packing passed
-✔ FastContextLocalizer: term scoring and query ranking passed
-✔ CodebaseIndexStore: SQLite storage and Levenshtein suggestion passed
-✔ Strict Read-Only Audit: All 4 tools verified 100% read-only with ZERO write effects
-✔ CodebaseScannerService: Full end-to-end scanning pass complete
-
-ALL CODEBASE SCANNER TESTS PASSED! 🚀
-```
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for details.

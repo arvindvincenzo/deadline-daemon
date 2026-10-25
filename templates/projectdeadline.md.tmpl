@@ -1,0 +1,104 @@
+# Project Deadline & Milestone Contract
+
+> **Target Completion**: [YYYY-MM-DD HH:MM / Time Budget]
+> **Total Available Hours**: [X.X hrs]
+> **Centralized Project Buffer (PB)**: [20% = Y.Y hrs]
+> **Buffer Status (Fever Chart)**: [🟢 GREEN (<33%) / 🟡 YELLOW (33-66%) / 🔴 RED (>66%)]
+> **Source Blueprint**: [project.md](file:///path/to/project.md)
+> **Execution Status**: [LOCKED & APPROVED / IN PROGRESS / VERIFIED]
+
+---
+
+## Competing Hypotheses & ACH Disproof Summary
+- **Hypothesis Chosen**: [e.g., H2 — Decoupled Adapter Seam]
+- **Disproved Alternatives**:
+  - *H1 (Direct Modification)*: Disproved by high failure blast radius and inability to mock tests.
+  - *H3 (Dynamic Reflection)*: Disproved by breaking AOT compilation and cognitive overhead.
+
+---
+
+## The 3-Role Review Triad Sign-offs
+- [x] **💼 CEO / Product**: Value proposition certified; emergency cutline defined.
+- [x] **🏗️ Staff Eng**: Zero SPOFs, backward-compatible migrations, sub-50ms test isolation.
+- [x] **🎨 Design Critic**: Zero generic error copy; 10 UI states accounted for; $\ge 48\text{dp}$ touch targets.
+
+---
+
+## Milestone Execution Matrix (Minimalist Energy Allocation)
+
+| # | Milestone | Energy Tier | P50 Budget | Reason / User Value & Failure Cost | Primary Skill | Verification Gate | Status |
+|---|:---|:---|:---|:---|:---|:---|:---|
+| M1 | [Domain Model & DB Schema] | ⚡ Tier 1 | 30 mins | Prevents data loss & schema drift; establishes ground truth for state | `domain-modeling` | Schema migration test | ⏳ Pending |
+| M2 | [Core Logic & Hardware Gates] | ⚡ Tier 1 | 45 mins | Protects device from thermal throttling; decimation gate guarantees 60fps | `ponytail`, `tdd` | Unit tests 100% pass | ⏳ Pending |
+| M3 | [UI Widgets & Microcopy Audit] | 💡 Tier 2 | 45 mins | Removes user confusion; guarantees 48dp touch targets and zero RenderFlex stripes | `ui-ux-pro-max` | Zero RenderFlex, 48dp | ⏳ Pending |
+| M4 | [Integration & Live Deploy] | ⚙️ Tier 3 | 30 mins | Verifies end-to-end execution on target hardware before deadline cutline | `devops_build` | Live ADB / Browser QA | ⏳ Pending |
+
+---
+
+## Milestone Detail Specifications (EFAR Justification)
+
+### Milestone 1: [Domain Model & Schema]
+- **Energy Tier**: ⚡ Tier 1 (Deep Core)
+- **EFAR Reason**:
+  - *Direct User Value*: Users never lose customized data across app updates.
+  - *Failure Consequence*: Migration crash on launch if schema drift occurs.
+  - *Ponytail Simplification*: Single table extension with raw SQL fallback; zero wrapper classes.
+- **Target Files**:
+  - `lib/models/...`
+- **Defects Checked**:
+  - [x] Nullability and serialization edge cases verified
+  - [x] Zero circular dependencies between models
+- **Verification Command**: `[test command]`
+
+### Milestone 2: [Core Logic & Adapters]
+- **Energy Tier**: ⚡ Tier 1 (Deep Core)
+- **EFAR Reason**:
+  - *Direct User Value*: Immediate, stutter-free feedback; protected hardware lifecycle.
+  - *Failure Consequence*: Thermal shutdown or frozen UI on long sessions without decimation.
+  - *Ponytail Simplification*: Minimal timestamp difference gate; zero new dependencies.
+- **Target Files**:
+  - `lib/services/...`
+- **Defects Checked**:
+  - [x] Deep module interface designed
+  - [x] Concurrency and decimation throttles implemented
+- **Verification Command**: `[test command]`
+
+### Milestone 3: [UI Widgets & Microcopy Audit]
+- **Energy Tier**: 💡 Tier 2 (Clarity Front)
+- **EFAR Reason**:
+  - *Direct User Value*: 100% clear button actions; zero clipped text or cryptic error popups.
+  - *Failure Consequence*: User misinterprets action and triggers unintended state change.
+  - *Ponytail Simplification*: Reuse standard app theme tokens; replace custom dialogs with platform confirm sheets.
+- **Target Files**:
+  - `lib/features/...`
+- **Defects Checked**:
+  - [x] Microcopy clarity: Zero ambiguous "Error" messages
+  - [x] Button labels match exact state actions
+  - [x] Touch targets $\ge 48\times 48\text{dp}$, zero RenderFlex overflow
+- **Verification Command**: `[test command]`
+
+---
+
+## The "Nothing-Missed" Closure Audit
+- [ ] **Dimension 1 (Boundaries)**: Null, empty, overflow inputs validated
+- [ ] **Dimension 2 (Errors)**: Network, timeout, and offline states handled
+- [ ] **Dimension 3 (UI States)**: All 10 states (loading, empty, error, active) verified
+- [ ] **Dimension 4 (Microcopy)**: Zero contradictory CTAs or generic errors
+- [ ] **Dimension 5 (Concurrency)**: Double-tap debounce and stream decimation gates in place
+- [ ] **Dimension 6 (Data & Schema)**: Schema migrations tested with backward compatibility
+- [ ] **Dimension 7 (Hardware & A11y)**: Minimum 48x48dp touch bounds, zero memory leaks
+
+---
+
+## Circuit Breaker & Scope Cutline
+If the Project Buffer enters the Red Zone ($> 66\%$ consumed):
+- **Drop (Post-Deadline)**: [List non-essential UI animations or secondary metrics]
+- **Preserve at All Costs**: [List core transaction/data persistence paths]
+
+---
+
+## Verification & Sign-off Checklist
+- [ ] All unit and widget tests pass (`run_command: [test command]`)
+- [ ] Zero static analysis errors (`[lint command]`)
+- [ ] Real Runtime QA verified (Playwright DOM or live ADB UIAutomator dump)
+- [ ] `projectdeadline.md` marked COMPLETE

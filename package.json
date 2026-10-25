@@ -1,0 +1,30 @@
+{
+  "name": "deadline-daemon",
+  "version": "1.0.0",
+  "description": "Autonomous deadline-driven engineering architecture combining the Deadline Method with the Upgraded REA Codebase Omni-Scanner.",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "cd packages/rea && node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/verify_codebase_scanner.ts",
+    "test:scanner": "cd packages/rea && node --experimental-strip-types --loader ./scripts/ts-loader.mjs scripts/verify_codebase_scanner.ts",
+    "install:skills": "powershell -ExecutionPolicy Bypass -File ./scripts/install.ps1",
+    "verify": "powershell -ExecutionPolicy Bypass -File ./scripts/verify.ps1"
+  },
+  "keywords": [
+    "deadline",
+    "autonomous-agent",
+    "mcp",
+    "ast-scanner",
+    "pagerank",
+    "repomap",
+    "reverse-engineering",
+    "gsd",
+    "gstack",
+    "ecc"
+  ],
+  "author": "Deadline Daemon Engineering Team",
+  "license": "Apache-2.0"
+}

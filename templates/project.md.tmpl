@@ -1,0 +1,53 @@
+# Project Blueprint Specification
+
+> **Project Name**: [Project Name]
+> **Repository Root**: [Path to Root]
+> **Architecture Model**: [Clean Architecture / Microservices / Full-Stack / Modular Monolith]
+> **Target Production Deadline**: [YYYY-MM-DD HH:MM]
+
+---
+
+## 1. System Vision & Business Moat
+- **Core Value Proposition**: [Explain the primary user problem solved in one sentence]
+- **Key Deliverable**: [What concrete capability or artifact must ship]
+- **Competitive Advantage / Moat**: [Why this implementation is distinct and defensible]
+
+---
+
+## 2. Technical Stack & Invariants
+- **Primary Languages**: [e.g. Dart / TypeScript / Go / Rust / Python]
+- **Frameworks & Runtimes**: [e.g. Flutter / Next.js / Node.js]
+- **Database & State**: [e.g. SQLite / Drift / PostgreSQL / Redis]
+- **Hardware / External APIs**: [e.g. Camera, Bluetooth, Razorpay SDK, Stripe]
+- **Hard Constraints**: [e.g. Zero external write tools, sub-135ms frame decimation, offline-first]
+
+---
+
+## 3. Subsystem Architecture
+```
+[Client / UI Layer]
+       │
+       ▼
+[Adapter / Facade Seam]
+       │
+       ▼
+[Core Domain Logic & Business Rules]
+       │
+       ▼
+[Data Layer / Local Storage / Remote APIs]
+```
+
+### Subsystems Breakdown
+1. **Presentation / Views**: [Screens, widgets, responsive layout, 10 lifecycle states]
+2. **Domain / Business Logic**: [State machines, BLoCs/Cubits, throttling gates]
+3. **Infrastructure / Adapters**: [Third-party SDK wrappers, network clients]
+4. **Data Persistence**: [Database schema, migrations, serialization DTOs]
+
+---
+
+## 4. Quality & Verification Standards
+- **Automated Tests**: [Test command, required pass rate = 100%]
+- **Static Analysis / Lint**: [Linter command, 0 warnings as errors]
+- **Runtime QA**: [Playwright DOM check / ADB hardware UIAutomator dump]
+- **A11y Touch Targets**: [Minimum 48x48dp mobile, 44x44px web]
+- **Layout Safety**: [Zero RenderFlex overflows, zero unexpanded text truncations]
