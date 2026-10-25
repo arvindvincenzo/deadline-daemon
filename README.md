@@ -1,6 +1,6 @@
 # Deadline Daemon ⏱️⚡
 
-[![CI](https://github.com/Arunaah/deadline-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/Arunaah/deadline-daemon/actions/workflows/ci.yml)
+[![CI](https://github.com/arvindvincenzo/deadline-daemon/actions/workflows/ci.yml/badge.svg)](https://github.com/arvindvincenzo/deadline-daemon/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/Node.js-22%2B-green.svg)](https://nodejs.org/)
 [![Safety](https://img.shields.io/badge/Scanner_Safety-Strict_Read--Only-blueviolet.svg)](#strict-safety-invariants)
